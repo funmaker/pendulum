@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="settings">
+        <div><label for="resolution">Resolution</label><input type="range" min="0.0625" max="1" step="any" id="resolution"></div>
+        <div><label for="timeStep">Time Step</label><input type="range" min="0.01" max="1" step="any" id="timeStep"></div>
+        <div><label for="weight">Gravity</label><input type="range" min="0" max="1" step="any" id="weight"></div>
+        <div><label for="magnetForce">Magnet Force</label><input type="range" min="0" max="0.01" step="any" id="magnetForce"></div>
+        <div><label for="drag">Air Drag</label><input type="range" min="0" max="1" step="any" id="drag"></div>
+        <div><label for="magnetDepth">Magnet Depth</label><input type="range" min="0" max="1" step="any" id="magnetDepth"></div>
+        <div><label for="stringLength">String Length</label><input type="range" min="1" max="10" step="any" id="stringLength"></div>
+        <div><label for="maxSteps">Max Steps</label><input type="range" min="0" max="100000" id="maxSteps"></div>
+        <div><input type="checkbox" id="hideMagnets"><label for="hideMagnets">Hide Magnets</label></div>
+        <p>
+            Click to move pendulum<br />
+            Shift+Click to add/remove magnets
+        </p>
+        <button id="generate">Generate</button>
+        <p class="footer">
+            Made by: <a href="https://github.com/funmaker" target="_blank" rel="noreferrer">Fun Maker</a>
+        </p>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+
